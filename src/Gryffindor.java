@@ -44,7 +44,7 @@ public class Gryffindor extends Hogwarts {
                 ", Храбрость=" + bravery;
     }
 
-    public static int sumGryffindor(Gryffindor student) {
-        return student.getNobility() + student.getHonor() + student.getBravery();
+    public int sumGryffindor() {
+        return getNobility() + getHonor() + getBravery();
     }
 }

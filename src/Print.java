@@ -1,6 +1,6 @@
 public class Print {
     public void printBestStudentOfFaculty(Gryffindor student1, Gryffindor student2) {
-        if (Gryffindor.sumGryffindor(student1) > Gryffindor.sumGryffindor(student2)) {
+        if (student1.sumGryffindor() > student2.sumGryffindor()) {
             System.out.println(student1.getName() + " лучший Гриффиндорец, чем " + student2.getName());
         } else {
             System.out.println(student2.getName() + " лучший Гриффиндорец, чем " + student1.getName());
@@ -9,7 +9,7 @@ public class Print {
     }
 
     public void printBestStudentOfFaculty(Slytherin student1, Slytherin student2) {
-        if (Slytherin.sumSlytherin(student1) > Slytherin.sumSlytherin(student2)) {
+        if (student1.sumSlytherin() > student2.sumSlytherin()) {
             System.out.println(student1.getName() + " лучший Слизоринец, чем " + student2.getName());
         } else {
             System.out.println(student2.getName() + " лучший Слизоринец, чем " + student1.getName());
@@ -18,7 +18,7 @@ public class Print {
     }
 
     public void printBestStudentOfFaculty(Ravenclaw student1, Ravenclaw student2) {
-        if (Ravenclaw.sumRavenclaw(student1) > Ravenclaw.sumRavenclaw(student2)) {
+        if (student1.sumRavenclaw() > student2.sumRavenclaw()) {
             System.out.println(student1.getName() + " лучший Когтевранец, чем " + student2.getName());
         } else {
             System.out.println(student2.getName() + " лучший Когтевранец, чем " + student1.getName());
@@ -27,7 +27,7 @@ public class Print {
     }
 
     public void printBestStudentOfFaculty(Hufflepuff student1, Hufflepuff student2) {
-        if (Hufflepuff.sumHufflepuff(student1) > Hufflepuff.sumHufflepuff(student2)) {
+        if (student1.sumHufflepuff() > student2.sumHufflepuff()) {
             System.out.println(student1.getName() + " лучший Пуфендуец, чем " + student2.getName());
         } else {
             System.out.println(student2.getName() + " лучший Пуфендуец, чем " + student1.getName());
@@ -36,7 +36,7 @@ public class Print {
     }
 
     public void printBestStudent(Hogwarts student1, Hogwarts student2) {
-        if (Hogwarts.sum(student1) > Hogwarts.sum(student2)) {
+        if (student1.sum() > student2.sum()) {
             System.out.println(student1.getName() + " обладает бОльшей мощностью магии, чем " + student2.getName());
         } else {
             System.out.println(student2.getName() + " обладает бОльшей мощностью магии, чем " + student1.getName());

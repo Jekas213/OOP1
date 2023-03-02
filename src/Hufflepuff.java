@@ -44,7 +44,7 @@ public class Hufflepuff extends Hogwarts {
                 ", Честность=" + honesty;
     }
 
-    public static int sumHufflepuff(Hufflepuff student) {
-        return student.getIndustriousness() + student.getLoyalty() + student.getHonesty();
+    public int sumHufflepuff() {
+        return getIndustriousness() + getLoyalty() + getHonesty();
     }
 }

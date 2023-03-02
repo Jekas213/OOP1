@@ -73,7 +73,7 @@ public class Slytherin extends Hogwarts {
                 ", Жажда Власти=" + lustForPower;
     }
 
-    public static int sumSlytherin(Slytherin student) {
-        return student.getTrick() + student.getDetermination() + student.getAmbition() + student.getResourcefulness() + student.getLustForPower();
+    public int sumSlytherin() {
+        return getTrick() + getDetermination() + getAmbition() + getResourcefulness() + getLustForPower();
     }
 }

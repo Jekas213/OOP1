@@ -35,8 +35,8 @@ public class Hogwarts {
         this.name = name;
     }
 
-    public static int sum(Hogwarts student) {
-        return student.getPowerOfMagik() + student.getDistanceOfTransgression();
+    public int sum() {
+        return getPowerOfMagik() + getDistanceOfTransgression();
     }
 
 }

@@ -55,7 +55,7 @@ public class Ravenclaw extends Hogwarts {
                 ", Творчество=" + creativity;
     }
 
-    public static int sumRavenclaw(Ravenclaw student) {
-        return student.getMind() + student.getWisdom() + student.getCreativity() + student.getWit();
+    public int sumRavenclaw() {
+        return getMind() + getWisdom() + getCreativity() + getWit();
     }
 }
